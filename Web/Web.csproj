@@ -85,6 +85,7 @@
     <Content Include="cfsadmin\QuestionManagement\Choice.aspx" />
     <Content Include="cfsadmin\QuestionManagement\Composition.aspx" />
     <Content Include="cfsadmin\QuestionManagement\DepthReading.aspx" />
+    <Content Include="cfsadmin\QuestionManagement\Details\ChoiceDetail.aspx" />
     <Content Include="cfsadmin\QuestionManagement\FastReading.aspx" />
     <Content Include="cfsadmin\QuestionManagement\FillingBlanks.aspx" />
     <Content Include="cfsadmin\QuestionManagement\Translation.aspx" />
@@ -901,6 +902,13 @@
     </Compile>
     <Compile Include="cfsadmin\QuestionManagement\DepthReading.aspx.designer.cs">
       <DependentUpon>DepthReading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cfsadmin\QuestionManagement\Details\ChoiceDetail.aspx.cs">
+      <DependentUpon>ChoiceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cfsadmin\QuestionManagement\Details\ChoiceDetail.aspx.designer.cs">
+      <DependentUpon>ChoiceDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="cfsadmin\QuestionManagement\FastReading.aspx.cs">
       <DependentUpon>FastReading.aspx</DependentUpon>

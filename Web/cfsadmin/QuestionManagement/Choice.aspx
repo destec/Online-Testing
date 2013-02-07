@@ -13,6 +13,9 @@
     <div class="pageContent">
         <div class="panelBar">
             <ul class="toolBar" id="admin" runat="server">
+                <li><a class="icon" href="QuestionManagement/Details/ChoiceDetail.aspx?qsid={qsid}&type=detail&page=<%=NumPerPage %>&pagenum=<%=PageNum %>"
+                    target="dialog" rel="detail" warn="请选择一条记录" width="500" height="370"><span>查看详细</span></a></li>
+                <li class="line">line</li>
                 <li><a class="add" href="Manage/BaseData/addDealMain.aspx?type=add&page=<%=NumPerPage %>&pagenum=<%=PageNum %>"
                     target="dialog" rel="catemodadd" width="500" height="370"><span>新增</span></a></li>
                 <li class="line">line</li>

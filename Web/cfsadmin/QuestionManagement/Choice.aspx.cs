@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Text;
 
 namespace cfs.Web.cfsadmin.QuestionManagement
 {
@@ -75,8 +77,43 @@ namespace cfs.Web.cfsadmin.QuestionManagement
                 temp = Convert.ToInt32(Request.Form["pageNum"]);
                 pageNum = temp == 0 ? 1 : temp;
 
-                //BindData(numPerPage, pageNum);
+                BindData(numPerPage, pageNum);
             }
+        }
+        private void BindData(int numPerPage, int pageNum)
+        {
+            cfs.BLL.OT_QUESTION bll = new cfs.BLL.OT_QUESTION();
+            StringBuilder sb = new StringBuilder();
+            DataSet ds = new DataSet();
+            //根据Session值查表
+            string sqlwhere = "";
+            TotalCount = bll.GetRecordCount(sqlwhere);
+            ds = bll.GetListByPage(sqlwhere, "QS_ID DESC", (pageNum - 1) * numPerPage + 1, pageNum * numPerPage);
+            sb.Append("<table class=\"table\" width=\"80%\" layouth=\"74\"><thead><tr align='center'><th>题目编号</th><th width=\"70%\">题干</th><th width='5%'>难易度</th><th width='10%'>创建教师</th></tr></thead>");
+            sb.Append("<tbody>");
+            if (ds.Tables[0].Rows.Count != 0)
+            {
+                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                {
+                    sb.Append("<tr target='qsid' rel='" + ds.Tables[0].Rows[i]["QS_ID"] + "' align='center'>");
+                    sb.Append("<td>");
+                    sb.Append(ds.Tables[0].Rows[i]["QS_ID"]);
+                    sb.Append("</td>");
+                    sb.Append("<td>");
+                    sb.Append(ds.Tables[0].Rows[i]["QS_CONTENT"]);
+                    sb.Append("</td>");
+                    sb.Append("<td>");
+                    sb.Append(ds.Tables[0].Rows[i]["QS_HARD"]);
+                    sb.Append("</td>");
+                    //显示用户分组，根据Session的值更改
+                    sb.Append("<td>");
+                    sb.Append(ds.Tables[0].Rows[i]["QS_TID"]);
+                    sb.Append("</td>");
+                    sb.Append("</tr>");
+                }
+            }
+            sb.Append("</tbody></table>");
+            MainTable.InnerHtml = sb.ToString();
         }
     }
 }
