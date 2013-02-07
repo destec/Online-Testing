@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="cfs.Web.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="cfs.Web.cfsadmin.Index" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -139,10 +139,14 @@
                     </div>
                     <div class="accordionContent">
                         <ul class="tree treeFolder">
-                            <li><a href="#" target="navTab" rel="">完型填空</a> <a href="#" target="navTab" rel="">精读（阅读理解）</a>
-                                <a href="#" target="navTab" rel="">快速阅读</a> <a href="#" target="navTab" rel="">单项选择</a>
-                                <a href="#" target="navTab" rel="">翻译</a> <a href="#" target="navTab" rel="">作文</a>
-                            </li>
+                            <li>
+                            <a href="./QuestionManagement/FillingBlanks.aspx" target="navTab" rel="FillingBlanks">完型填空</a>
+                             <a href="./QuestionManagement/DepthReading.aspx" target="navTab" rel="DepthReading">精读（阅读理解）</a> 
+                             <a href="./QuestionManagement/FastReading.aspx" target="navTab" rel="FastReading">快速阅读</a> 
+                             <a href="./QuestionManagement/Choice.aspx" target="navTab" rel="Choice">单项选择</a> 
+                             <a href="./QuestionManagement/Translation.aspx" target="navTab" rel="Translation">翻译</a>
+                             <a href="./QuestionManagement/Composition.aspx" target="navTab" rel="Composition">作文</a> 
+                             </li>
                         </ul>
                     </div>
                 </div>
@@ -189,7 +193,6 @@
                                 DWZ官方微博:<a href="http://weibo.com/dwzui" target="_blank">http://weibo.com/dwzui</a></p>
                         </div>--%>
                         <div class="pageFormContent" layouth="80" style="margin-right: 230px">
-                            
                             <h2>
                                 大学英语在线考试系统</h2>
                             <div class="divider">
@@ -201,7 +204,8 @@
         </div>
     </div>
     <div id="footer">
-        Copyright &copy; 2013 <a href="http://cfs.zjxu.edu.cn" target="_blank">cfs.zjxu.edu.cn</a> Tel：0573-xxx</div>
+        Copyright &copy; 2013 <a href="http://cfs.zjxu.edu.cn" target="_blank">cfs.zjxu.edu.cn</a>
+        Tel：0573-xxx</div>
     <!-- 注意此处js代码用于google站点统计，非DWZ代码，请删除 -->
     <%--<script type="text/javascript">
     var _gaq = _gaq || [];
@@ -216,3 +220,4 @@
 </script>--%>
 </body>
 </html>
+

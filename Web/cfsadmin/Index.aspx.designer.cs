@@ -7,9 +7,9 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace cfs.Web {
+namespace cfs.Web.cfsadmin {
     
     
-    public partial class Default {
+    public partial class Index {
     }
 }
