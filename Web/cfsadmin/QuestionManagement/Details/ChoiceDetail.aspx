@@ -18,7 +18,7 @@
                 <input type="hidden" name="pagenum" id="pagenum" runat="server" />
                 <input type="hidden" id="type" runat="server" />
                 <input type="hidden" id="UserGroup" runat="server" />
-                <input type="hidden" id="sid" runat="server" />
+                <input type="hidden" id="qsid" runat="server" />
             </p>
             <p>
                 <label>

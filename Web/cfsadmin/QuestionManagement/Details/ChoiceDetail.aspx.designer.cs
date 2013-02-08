@@ -67,13 +67,13 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details {
         protected global::System.Web.UI.HtmlControls.HtmlInputHidden UserGroup;
         
         /// <summary>
-        /// sid 控件。
+        /// qsid 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden sid;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden qsid;
         
         /// <summary>
         /// question 控件。
