@@ -7,13 +7,14 @@
 </head>
 <body>
     <div class="pageContent">
-        <form id="Form2" method="post" class="pageForm required-validate" runat="server">
+        <form id="Form1" method="post" action="QuestionManagement/bean.ashx" class="pageForm required-validate"
+        onsubmit="return validateCallback(this, dialogAjaxDone)" runat="server">
         <div class="pageFormContent" layouth="56">
             <p>
                 <label>
                     题目编号：
                 </label>
-                <input type="text" readonly="readonly" id="number" runat="server" />
+                <input type="text" id="number" runat="server" />
                 <input type="hidden" name="page" id="page" runat="server" />
                 <input type="hidden" name="pagenum" id="pagenum" runat="server" />
                 <input type="hidden" id="type" runat="server" />
@@ -24,52 +25,59 @@
                 <label>
                     题干：
                 </label>
-                <input type="text" runat="server" id="question" readonly="readonly" />
+                <input type="text" runat="server" id="question" />
             </p>
             <p>
                 <label>
                     选项A：
                 </label>
-                <input type="text" runat="server" id="ca" readonly="readonly" />
+                <input type="text" runat="server" id="ca" />
             </p>
             <p>
                 <label>
                     选项B：
                 </label>
-                <input type="text" runat="server" id="cb" readonly="readonly" />
+                <input type="text" runat="server" id="cb" />
             </p>
             <p>
                 <label>
                     选项C：
                 </label>
-                <input type="text" runat="server" id="cc" readonly="readonly" />
+                <input type="text" runat="server" id="cc" />
             </p>
             <p>
                 <label>
                     选项D：
                 </label>
-                <input type="text" runat="server" id="cd" readonly="readonly" />
+                <input type="text" runat="server" id="cd" />
             </p>
             <p>
                 <label>
                     正确选项：
                 </label>
-                <input type="radio" runat="server" id="answer1" name="answer" disabled="disabled" />A
-                <input type="radio" runat="server" id="answer2" name="answer" disabled="disabled" />B
-                <input type="radio" runat="server" id="answer3" name="answer" disabled="disabled" />C
-                <input type="radio" runat="server" id="answer4" name="answer" disabled="disabled" />D
+                <input type="radio" runat="server" id="answer1" name="answer" value="1"/>A
+                <input type="radio" runat="server" id="answer2" name="answer" value="2"/>B
+                <input type="radio" runat="server" id="answer3" name="answer" value="3"/>C
+                <input type="radio" runat="server" id="answer4" name="answer" value="4"/>D
             </p>
             <p>
                 <label>
                     答案解析：
                 </label>
-                <input type="text" runat="server" id="explaination" readonly="readonly" />
+                <input type="text" runat="server" id="explaination" />
             </p>
         </div>
         <div class="formBar">
             <ul>
                 <li>
                     <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">
+                                提交</button></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
                         <div class="buttonContent">
                             <button type="button" class="close">
                                 关闭</button></div>

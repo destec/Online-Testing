@@ -882,6 +882,9 @@
     <Compile Include="cfsadmin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cfsadmin\QuestionManagement\bean.ashx.cs">
+      <DependentUpon>bean.ashx</DependentUpon>
+    </Compile>
     <Compile Include="cfsadmin\QuestionManagement\Choice.aspx.cs">
       <DependentUpon>Choice.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1328,6 +1331,7 @@
     <None Include="Admin\Accounts\images\skin2\vssver2.scc" />
     <None Include="Admin\Accounts\images\Thumbs.db" />
     <None Include="Admin\Accounts\images\vssver2.scc" />
+    <Content Include="cfsadmin\QuestionManagement\bean.ashx" />
     <None Include="cfsadmin\themes\azure\images\grid\Thumbs.db" />
     <None Include="cfsadmin\themes\azure\images\layout\Thumbs.db" />
     <None Include="cfsadmin\themes\azure\images\menu\Thumbs.db" />
