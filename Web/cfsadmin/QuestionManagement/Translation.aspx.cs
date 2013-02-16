@@ -95,7 +95,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement
             {
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
-                    sb.Append("<tr target='esid' rel='" + ds.Tables[0].Rows[i]["ES_ID"] + "' align='center'>");
+                    sb.Append("<tr target='qsid' rel='" + ds.Tables[0].Rows[i]["ES_ID"] + "' align='center'>");
                     sb.Append("<td>");
                     sb.Append(ds.Tables[0].Rows[i]["ES_ID"]);
                     sb.Append("</td>");

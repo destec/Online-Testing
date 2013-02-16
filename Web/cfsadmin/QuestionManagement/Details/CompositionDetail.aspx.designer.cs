@@ -10,7 +10,7 @@
 namespace cfs.Web.cfsadmin.QuestionManagement.Details {
     
     
-    public partial class ChoiceDetail {
+    public partial class CompositionDetail {
         
         /// <summary>
         /// Form1 控件。
@@ -58,6 +58,15 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details {
         protected global::System.Web.UI.HtmlControls.HtmlInputHidden type;
         
         /// <summary>
+        /// UserGroup 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden UserGroup;
+        
+        /// <summary>
         /// qsid 控件。
         /// </summary>
         /// <remarks>
@@ -67,93 +76,30 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details {
         protected global::System.Web.UI.HtmlControls.HtmlInputHidden qsid;
         
         /// <summary>
-        /// question 控件。
+        /// question_title 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText question;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText question_title;
         
         /// <summary>
-        /// ca 控件。
+        /// question_content 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText ca;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText question_content;
         
         /// <summary>
-        /// cb 控件。
+        /// answer 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText cb;
-        
-        /// <summary>
-        /// cc 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText cc;
-        
-        /// <summary>
-        /// cd 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText cd;
-        
-        /// <summary>
-        /// answer1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton answer1;
-        
-        /// <summary>
-        /// answer2 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton answer2;
-        
-        /// <summary>
-        /// answer3 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton answer3;
-        
-        /// <summary>
-        /// answer4 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton answer4;
-        
-        /// <summary>
-        /// explaination 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText explaination;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText answer;
     }
 }

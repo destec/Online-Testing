@@ -98,6 +98,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details
                     if (model.QS_CONTENT == null || model.QS_CONTENT.ToString().Trim() == "")
                     {
                         this.question.Value = "";
+                        this.question.Disabled = true;
                     }
                     else
                     {
@@ -107,15 +108,17 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details
                     if (model.QS_CHOICE_A == null || model.QS_CHOICE_A.ToString().Trim() == "")
                     {
                         this.ca.Value = "";
+                        this.ca.Disabled = true;
                     }
                     else
                     {
                         this.ca.Value = model.QS_CHOICE_A.ToString();
-
+                        this.ca.Disabled = true;
                     }
                     if (model.QS_CHOICE_B == null || model.QS_CHOICE_B.ToString().Trim() == "")
                     {
                         this.cb.Value = "";
+                        this.cb.Disabled = true;
                     }
                     else
                     {
@@ -125,6 +128,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details
                     if (model.QS_CHOICE_C == null || model.QS_CHOICE_C.ToString().Trim() == "")
                     {
                         this.cc.Value = "";
+                        this.cc.Disabled = true;
                     }
                     else
                     {
@@ -134,6 +138,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details
                     if (model.QS_CHOICE_D == null || model.QS_CHOICE_D.ToString().Trim() == "")
                     {
                         this.cd.Value = "";
+                        this.cd.Disabled = true;
                     }
                     else
                     {
@@ -167,6 +172,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement.Details
                     if (model.QS_COR_EXPLAINATION == null || model.QS_COR_EXPLAINATION.ToString().Trim() == "")
                     {
                         this.explaination.Value = "";
+                        this.explaination.Disabled = true;
                     }
                     else
                     {
