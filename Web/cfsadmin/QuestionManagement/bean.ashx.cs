@@ -37,6 +37,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement
                     model.QS_CHOICE_D = context.Request.Form["cd"];
                     model.QS_CHOICE_COR = Convert.ToInt32(context.Request.Form["answer"]);
                     model.QS_COR_EXPLAINATION = context.Request.Form["explaination"];
+                    model.QS_CTIME = System.DateTime.Now;
                     if (bll.Add(model))
                     {
                         jj = new Model.JSON() { statusCode = "200", message = "新增成功", navTabId = "Choice", rel = "", callbackType = "" };
@@ -48,7 +49,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement
                     context.Response.Write(jss.Serialize(jj));
                     break;
                 case "ChoiceEdit":
-                    //model = bll.GetModel(qsid);
+                    model = bll.GetModel(qsid);
                     model.QS_CONTENT = context.Request.Form["question"];
                     model.QS_CHOICE_A = context.Request.Form["ca"];
                     model.QS_CHOICE_B = context.Request.Form["cb"];
@@ -56,6 +57,7 @@ namespace cfs.Web.cfsadmin.QuestionManagement
                     model.QS_CHOICE_D = context.Request.Form["cd"];
                     model.QS_CHOICE_COR = Convert.ToInt32(context.Request.Form["answer"]);
                     model.QS_COR_EXPLAINATION = context.Request.Form["explaination"];
+                    model.QS_CTIME = System.DateTime.Now;
                     if (bll.Update(model))
                     {
                         jj = new Model.JSON() { statusCode = "200", message = "编辑成功", navTabId = "Choice", rel = "", callbackType = "" };

@@ -19,7 +19,7 @@
                 <li><a class="add" href="QuestionManagement/Details/ChoiceDetail.aspx?qsid={qsid}&type=ChoiceAdd&page=<%=NumPerPage %>&pagenum=<%=PageNum %>"
                     target="dialog" rel="catemodadd" width="500" height="370"><span>新增</span></a></li>
                 <li class="line">line</li>
-                <li><a title="确实要删除这些记录吗?" target="ajaxTodo" href="QuestionManagement/Details/ChoiceDetail.aspx?qsid={qsid}&type=ChoiceDelete&page=<%=NumPerPage %>&pagenum=<%=PageNum %>" warn="请选择一条记录" class="delete" title="确定要删除这条信息吗?"><span>删除</span></a></li>
+                <li><a title="确实要删除这些记录吗?" target="ajaxTodo" href="QuestionManagement/bean.ashx?qsid={qsid}&type=ChoiceDelete&page=<%=NumPerPage %>&pagenum=<%=PageNum %>" warn="请选择一条记录" class="delete" title="确定要删除这条信息吗?"><span>删除</span></a></li>
                 <li class="line">line</li>
                 <li><a class="edit" href="QuestionManagement/Details/ChoiceDetail.aspx?qsid={qsid}&type=ChoiceEdit&page=<%=NumPerPage %>&pagenum=<%=PageNum %>"
                     target="dialog" rel="depdel" warn="请选择一条记录" width="500" height="370"><span>修改</span></a></li>
